@@ -26,7 +26,7 @@ if (-Not (Test-Path $gifPath)) {
 $speedMultiplier = 3.0 
 
 # OVERRIDE TIMER: Change 0 to exact milliseconds if the window closes too early/late (e.g. 5000)
-$forceDuration = 2000
+$forceDuration = 4000
 
 if (-Not (Test-Path $gifPath)) {
     Write-Host "Could not find GIF at $gifPath. Make sure it is named exactly 'skeleton.gif' and in the same folder!" -ForegroundColor Red
@@ -164,4 +164,5 @@ $form.ShowDialog() | Out-Null
 
 # Clean up memory
 $img.Dispose()
+
 $form.Dispose()
